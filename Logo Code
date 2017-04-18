@@ -1,0 +1,16 @@
+
+var logo = function(x, y) {
+
+    noStroke();
+    
+    fill(0, 0, 0, 90);
+    rect(x, y, 75, 70);
+    
+    image(getImage("avatars/starky-ultimate"), x + 10, y + 5, 60, 60);
+    
+    fill(255, 255, 255, 150);
+    textSize(20);
+    text("Infinity", x + 10, y + 40);
+};
+
+logo(315, 320);
