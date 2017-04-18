@@ -1,0 +1,58 @@
+//Text Variables
+var x = -145;
+var x2 = 445;
+
+//Dots Variables
+var y = 400;
+var y2 = -1;
+var y3 = 405;
+    
+draw = function() {
+    background(0, 0, 0);
+    
+    fill(255, 255, 255);
+    textSize(40);
+    text("Infinity", x, 120); //130, 150
+    text("Presents", x2, 330); //170, 285
+    
+    text(".", 330, y); //290, 285
+    text(".", 340, y2); //300, 285
+    text(".", 350, y3); //310, 285
+    
+    image(getImage("avatars/starky-ultimate"), 135, 135, 150, 150);
+    
+    //Text - X
+    x += 5;
+    
+    if (x > 100) {
+        x = 100;
+    }
+    
+    // Text - X2
+    x2 += -5;
+    
+    if (x2 < 170) {
+        x2 = 170;
+    }
+    
+    //Dots - Y
+    y += -4;
+    
+    if (y < 330) {
+        y = 330;
+    }
+    
+    //Dots - Y2
+    y2 += 8;
+    
+    if (y2 > 330) {
+        y2 = 330;
+    }
+    
+    //Dots - Y3
+    y3 += -2;
+    
+    if (y3 < 330) {
+        y3 = 330;
+    }
+};
